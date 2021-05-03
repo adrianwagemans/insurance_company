@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Montserrat', sans-serif;
+    font-size: 20px;
+}
+h2 {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 2rem;
+    color: #529431;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+}
+.font2 p, .font2 span, .font2 {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 2rem;
+}
+#headerPic {
+    background-image: url(images/Background\ picture.png);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+}
+#logo{
+    padding: 3.5% 3.5%;
+    
+
+}
+#button {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    transition: all .2s ease-in-out;
+
+}
+#button:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+
+}
+
+#mobilebnt {
+    display: none;
+    width: 100%;
+}
+#buttonSolo{
+    width: 50%;
+    margin-top: -2%;
+    margin-left: 25%;
+    display:none;
+    transition: all .2s ease-in-out;
+
+}
+#buttonSolo:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+/*  coment */
+.coment {
+    text-align: center;
+    margin: 25% 0;
+    
+}
+.firstComent {
+    margin-top: 5%;
+    text-align: center;
+    
+    
+}
+.firstComent span {
+    margin: 2% auto 5%;
+    display: block;
+    color:#6e6e6e;
+}
+.secondText {
+    line-height: 1.5;
+    width: 80%;
+    margin: 2% auto;
+}
+ .separation {
+     border: 1px solid #6e6e6e;
+     width: 40%;
+     margin: 2% auto;
+     
+ }
+
+ .tours {
+     width: 90%;
+     margin: 7% auto;
+     
+ }
+ .tour {
+     margin-top: 5%;
+     display: flex;
+ }
+ .tour div {
+     text-align: center;
+     margin: 0 3.5% 0;
+     line-height: 1.5;
+ }
+ .tour h2 {
+     margin-top: 0;
+     padding-bottom: 7%;
+ }
+ .tour img {
+    max-width: 40%;
+    height: auto;
+    align-self: center;
+}
+ /*cta*/
+ .cta{
+     position: relative;
+     margin: 33% 0;
+ }
+ .mainImg{
+     overflow: hidden;
+     width: 100%;
+ }
+ .btn {
+     max-width: 45%;
+     position: absolute;
+     bottom:-7%;
+     right: 20%;
+     transition: all .2s ease-in-out;
+    }
+    .btn:hover {
+        cursor: pointer;
+        transform: scale(1.15);
+    }
+    
+ /*about*/
+
+ .aboutHead{
+     text-align: center;
+     margin: 5%;
+
+     
+ }
+ .about {
+     margin-top: 10%;
+     height: 1600px;
+     background-image: url(images/Background\ picture.png);
+     background-repeat: no-repeat;
+     background-position: bottom;
+     border-bottom: 1px solid goldenrod;
+     background-size: 100% 50%;
+ }
+ .about h2 {
+     margin: 3% auto; 
+
+ }
+
+ .us {
+     display: flex;
+
+ }
+.person {
+    text-align: center;
+}
+.person img {
+    margin: 5% auto;
+}
+.person p {
+    max-width: 75%;
+    margin: 2% auto;
+    line-height: 1.4;
+    padding: 0 10%;
+}
+
+/*footer*/ 
+
+footer{
+    display: flex;
+    background-color: #6e6e6e;
+    justify-content: space-around;
+}
+.logo-footer{
+    max-width: 30%;
+    height: auto;
+    align-self: center;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+li {
+    text-align: center;
+    list-style: none;
+    font-size: 0.8rem;
+}
+.social {
+    padding:5px;
+    text-align: center;
+}
+.social img{
+    max-width: 70px;
+    margin: 10% auto;
+
+    transition: all .2s ease-in-out;
+}
+.social img:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+
+/*responsive*/
+
+
+@media screen and (max-width:1200px ){
+    #headerPic {
+        background-size: auto;
+    }
+    .about {
+    
+        background-size:auto
+}}
+
+@media screen and (max-width:800px ) {
+    #button {
+        width: 30%;
+}
+    .tour img {
+        max-width: 40%;
+        height: auto;
+        align-self: center;
+    }
+    #logo{
+        
+        width: 100%;
+    }
+    .tour {
+        display: block;
+
+        text-align: center; 
+    }
+    .us {
+        display: block;
+        
+    }
+    .about {
+    
+        height: 2200px;
+    }
+
+}
+@media screen and (max-width: 650px) {
+    #button {
+        display: none;
+    }
+    #mobilebnt {
+        display: block;
+    }
+    #buttonSolo {
+        display: block;
+    }
+    #logo{
+        padding: 15% 3.5%;
+}
+
+
+}
+
+/*Contact form*/
+ .formhead h2 {
+     padding-top: 4%;
+
+ }
+#contactBody {
+    background-color: aliceblue;
+    text-align: center;
+}
+#contacDiv {
+    min-width:350px;
+    max-width: 900px;
+    height: 100vh;
+    margin: 0 auto;
+
+    background-image:url(images/Background\ picture.png);
+    background-position-x: center;
+}
+ input {
+     margin-top: 2.5%;
+ }
+#message {
+    margin: 2% auto 0;
+    margin-left: 5%;
+    
+}
+.user-form { padding:20px; }
+
+.user-form .field { padding: 4px; margin:1px; background: #eee; }
+
+.user-form .field label { display:inline-block; width:120px; margin-left:5px; }
+
+.user-form .field input { display:inline-block; }
+
+.user-form .field textarea { display:inline-block; }
+
+
+#sub {
+    padding: 10px 25px;
+    margin-top: 1px;
+    margin-left: 5%;
+    background-color: #529431;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
